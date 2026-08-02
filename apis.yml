@@ -1,7 +1,23 @@
 aid: yourpay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/yourpay.png
 name: YourPay
-description: YourPay is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: YourPay is an Indonesian fintech mobile application that helps overseas workers and their
+  families send money to Indonesia, pay bills (electricity, BPJS), buy phone credit, top up e-wallets,
+  make QRIS payments, and shop online. It is registered with Bank Indonesia as a Payment Service Provider
+  (Kategori Izin 1, license 23/678/DKSP/Srt/B) and monitored by KOMINFO. YourPay is a consumer-facing
+  payments app and does not currently publish a public developer portal, API reference, or OpenAPI
+  definition. It was surfaced as a 500 Global portfolio company and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/yourpay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Payments
+- Remittances
+- Money Transfer
+- Bill Payment
+- QRIS
+- Indonesia
+- Mobile Payments
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/yourpay-domain-security.yml
 - type: Website
   url: https://yourpay.co
